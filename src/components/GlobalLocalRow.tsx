@@ -4,7 +4,6 @@ const GlobalLocalRow: FC<{ str: string }> = ({ str }) => {
   return (
     <tr className="flex flex-1">
       {str.split("").map((v, index) => {
-        console.log(v.length);
         return (
           <td
             className="flex-1 text-center text-xs border-[1px] border-black md:text-base md:text-bold"

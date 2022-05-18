@@ -49,9 +49,6 @@ function globalLocal(s1: string, s2: string, m: number[][], t: number[][]) {
       t[i][j] = 0;
     }
   }
-  console.log(AlignmentA);
-  console.log(AlignmentM);
-  console.log(AlignmentB);
   return { a: AlignmentA, m: AlignmentM, b: AlignmentB };
 }
 

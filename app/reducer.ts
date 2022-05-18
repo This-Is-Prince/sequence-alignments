@@ -2,8 +2,8 @@ import { Reducer, useReducer } from "react";
 import { AppState, ActionState } from "../types/types";
 
 export const initialState: AppState = {
-  s1: "GATTACNAGATACCA",
-  s2: "ATACNGGATAACAN",
+  s1: "",
+  s2: "",
   m: [],
   local: { a: "", b: "", m: "" },
 };
@@ -12,7 +12,6 @@ export const reducer: Reducer<AppState, ActionState> = (state, action) => {
   switch (action.type) {
     case "ADD_SEQUENCE":
       const { name, value } = action.payload;
-      console.log(value);
       return { ...state, [name]: value, m: [], local: { a: "", b: "", m: "" } };
     case "ADD_GLOBAL":
       const { a, alignmentM, b, m } = action.payload;

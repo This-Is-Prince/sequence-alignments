@@ -28,7 +28,10 @@ const Header = () => {
             onChange={(e) => {
               dispatch({
                 type: "ADD_SEQUENCE",
-                payload: { name: "s1", value: e.target.value.toUpperCase() },
+                payload: {
+                  name: "s1",
+                  value: e.target.value.trim().toUpperCase(),
+                },
               });
             }}
             type="text"
@@ -44,7 +47,10 @@ const Header = () => {
             onChange={(e) => {
               dispatch({
                 type: "ADD_SEQUENCE",
-                payload: { name: "s2", value: e.target.value.toUpperCase() },
+                payload: {
+                  name: "s2",
+                  value: e.target.value.trim().toUpperCase(),
+                },
               });
             }}
             type="text"

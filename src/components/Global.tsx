@@ -8,7 +8,7 @@ const Global = () => {
   return (
     <section className="p-5 m-auto">
       <article>
-        <h2 className="text-2xl text-bold m-5">Global</h2>
+        <h2 className="text-2xl text-bold m-5">Global Matrix</h2>
         <table className="flex flex-col">
           <tbody>
             {m.map((arr, index1) => {
@@ -34,7 +34,7 @@ const Global = () => {
         </table>
       </article>
       <article>
-        <h2 className="text-2xl text-bold m-5">Local</h2>
+        <h2 className="text-2xl text-bold m-5">Best Aligned Sequence</h2>
         <table className="flex flex-col">
           <tbody>
             <GlobalLocalRow str={local.a} />
